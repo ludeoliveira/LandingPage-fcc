@@ -7,17 +7,19 @@
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 </style>
-    <title>Cósmica screenprinting</title>
+    <title>Cósmica screen-printing</title>
   </head>
 
   <body>
     <div class= "wrapper">
 
-      <header class="header" id= "header">
-        <img id="header-img" src="images/logoazul.png" width="200px" alt="company logo">
+      <main class="grid-container">
 
-        <nav  id="nav-bar">
-          <ul class="nav-group" >
+      <header class="header" id= "header">
+        <img class="header-img" id="header-img" src="images/logoazul.png"  alt="company logo">
+
+        <nav  id="nav-bar" >
+          <ul class="nav-group">
             <li class="nav-link"> <a href="https://example.com">buy</a></li>
             <li class="nav-link"> <a href="#how-it-works">Learn</a></li>
             <li class="nav-link"> <a href="#form">get in touch</a></li>
@@ -25,23 +27,31 @@
         </nav>
       </header>
 
-      <main>
 
-        <section>
-          <div class="product">
-            <h1>Calendário 2022</h1>
-            <img src="https://www.behance.net/gallery/95361621/Calendario-2020-Cosmica-e-Lunaticaz" alt="foto do calendário">
-            <p>descrição do produto<p>
-          </div>
-            </section>
 
+        <div class="product-title">
+          <h1>Accidental screenprint </h1>
+          <p>descrição do produto<p>
+        </div>
+
+        <img class="product-image" src="images/produto.png" alt="gravura azul">
+
+        <div class="product-sale">
+          <h1>$45</h1>
+          <button type="button" name="button">Add to cart</button>
+        </div>
 
         <section class= "video" id="how-it-works">
          <h1>Learn about screenprinting:</h1>
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/O8HB2cQm_Ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
+        </section>
 
-        <form id="form">
+        <section class="contact">
+          <h2> Want us to print your own product? get in touch!<h2>
+            <h3> here are our contacts</h3>
+        </section>
+
+        <form class="form" id="form">
 
           <label for="email"> Subscribe to our newsletter and stay up to date with our latest works and special manufactured products.</label><br>
           <input name="email"
@@ -56,9 +66,7 @@
 
       </main>
 
-      <footer>
 
-      </footer>
   </div>
 
     </body>
