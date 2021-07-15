@@ -26,7 +26,7 @@ ul {
   /* margin: 0 5vw; */
   grid-gap: 8px;
   justify-content: space-around;
-  margin: 0;
+  /* margin: 0; */
 }
 
 /*  HEADER STYLES */
