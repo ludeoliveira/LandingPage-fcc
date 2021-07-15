@@ -162,7 +162,7 @@ ul {
 
 .video-description {
   grid-column: 1 / span 2;
-  margin-top: 2em;
+  margin: 2em;
   padding: 0 5em;
 }
 
@@ -170,7 +170,7 @@ ul {
   font-size: 1em;
   padding: 10px 0 40px;
   grid-column: 3 /  span 2;
-  margin-top: 5em;
+  margin-top: 3em;
 
 }
 
@@ -279,10 +279,14 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 1em 3em; */
+    padding: 1em 3em;
     margin: 2em;
+    width: 80vw;
   }
 
+  .img-container {
+    width: 70vw;
+  }
   .product-description {
     padding: 0;
   }
@@ -302,7 +306,7 @@ input {
   }
 
   .video-description {
-    padding:0;
+    /* padding:0; */
   }
 
   .video {
@@ -317,6 +321,7 @@ input {
   .contact {
     border-bottom: solid 1px #264bff;
     border-right: none;
+    margin: 0 2em;
   }
 
   .form {
