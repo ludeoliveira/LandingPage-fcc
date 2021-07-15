@@ -1,73 +1,100 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="main.css">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
-</style>
-    <title>Cósmica screen-printing</title>
-  </head>
+<html lang="pt-br" dir="ltr">
 
-  <body>
-    <div class= "wrapper">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="main.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+  </style>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <title>Cósmica Press</title>
+</head>
 
-      <main class="grid-container">
+<body>
+  <div class="wrapper">
 
-      <header class="header" id= "header">
-        <img class="header-img" id="header-img" src="images/logoazul.png"  alt="company logo">
+    <div class="grid-container">
 
-        <nav  id="nav-bar" >
-          <ul class="nav-group">
-            <li class="nav-link"> <a href="https://example.com">buy</a></li>
-            <li class="nav-link"> <a href="#how-it-works">Learn</a></li>
-            <li class="nav-link"> <a href="#form">get in touch</a></li>
+      <header class="header" id="header" role="banner">
+        <img class="header-img" id="header-img" src="images/logoazul.png" alt="company logo">
+
+        <nav id="nav-bar" role="navigation">
+          <ul class="nav-group" role="menu">
+            <li class="nav-link"> <a href="https://example.com" role="menuitem">loja</a></li>
+            <li class="nav-link"> <a href="#how-it-works" role="menuitem">sobre</a></li>
+            <li class="nav-link"> <a href="#form" role="menuitem">contato</a></li>
           </ul>
         </nav>
       </header>
 
-
-
-        <div class="product-title">
-          <h1>Accidental screenprint </h1>
-          <p>descrição do produto<p>
-        </div>
-
+      <div class="img-container">
         <img class="product-image" src="images/produto.png" alt="gravura azul">
+      </div>
 
-        <div class="product-sale">
-          <h1>$45</h1>
-          <button type="button" name="button">Add to cart</button>
-        </div>
-
-        <section class= "video" id="how-it-works">
-         <h1>Learn about screenprinting:</h1>
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/O8HB2cQm_Ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="product-description">
+        <section>
+          <h1>Arte acidental #13</h1>
+          <p><em>Arte acidental #13</em> faz parte de uma série de gravuras em serigrafia produzida pela <strong>Cósmica</strong>. Como o nome sugere,
+            a série é um feliz acidente trazido à vida com estampas impressas aleatoriamente durante nosso processo cotidiano no ateliê de serigrafia. Esse processo inclui o ato de "limpar" a tela em uma superfície de papel para prepararmos para a impressão do produto em si e/ou resultado de simples testes de cores e nitidez do desenho a ser impresso. 
+          </p>
         </section>
-
-        <section class="contact">
-          <h2> Want us to print your own product? get in touch!<h2>
-            <h3> here are our contacts</h3>
+        <section class="product-sale">
+          <h1>R$45</h1>
+          <p>Serigrafia em papel colorplus 180mg/m • 42x29,7cm<sup>2</sup> • exemplar único</p>
+          
+          <button class= "comprar" type="button" name="button">comprar</button>
         </section>
+      </div>
 
-        <form class="form" id="form">
+      <img class="features" src="images/maos.png" alt="características do produto">
 
-          <label for="email"> Subscribe to our newsletter and stay up to date with our latest works and special manufactured products.</label><br>
-          <input name="email"
-                 id="email"
-                 type="email"
-                 placeholder="Enter your email"><br>
-          <button id="submit"><a href="https://www.freecodecamp.com/email-submit">Sign me up!</a></button>
+      <span class="features-text">Feito à mão em serigrafia por terráqueas trincadas!</span>
+      
 
-        </form>
+      <section id="how-it-works" class= "video-description">
+          <h1>O que é serigrafia?</h1>
+          <p>A serigrafia é um processo de impressão manual  onde a tinta é transferida para a superfície (geralmente papel ou tecido) através da pressão de um rodo sobre uma tela de poliéster com bastidor de madeira ou metal onde está gravado o desenho. As cores são aplicadas uma de cada vez.</p>
+      </section>
+      
+      <iframe class="video" id="video" width="560" height="315" src="https://www.youtube.com/embed/O8HB2cQm_Ag"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+      </iframe>
+        
+      <img class="divider" src="images/divider.png" alt="desenho azul">
+      
+      <section class="contact">
+        <p> Sim, nós podemos imprimir seu próprio produto ou obra de arte em serigrafia!<p>
+        <p>Fala com a gente no <em>cosmicaseri@gmail.com</em></p>
+      </section>
+
+      <form class="form" id="form">
+
+        <label for="email">Assine nossa newsletter e fique por dentro de nossos últimos trabalhos e produtos artesanais exclusivos. Saia quando quiser.</label><br>
+
+        <input name="email" id="email" type="email" placeholder="Escreva seu e-mail"><br>
+
+        <button  class="assinar" type= "button" name="button" id="submit" aria-label="subscribe to our newsletter">
+          <a href="https://www.freecodecamp.com/email-submit">Assinar</a>
+        </button>
+
+      </form>
+
+      <footer class="rodape">
+        <img src="images/cosmicalogo2-01.png" alt="logotipo cósmica">
+        <legend>Cósmica Press™. Todos os direitos reservados.</legend>
+      </footer>
 
 
 
-      </main>
+    </div>
 
 
   </div>
 
-    </body>
+</body>
+
 </html>
