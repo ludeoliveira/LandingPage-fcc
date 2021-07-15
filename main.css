@@ -279,7 +279,8 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em 3em;
+    /* padding: 1em 3em; */
+    margin: 2em;
   }
 
   .product-description {
@@ -325,7 +326,7 @@ input {
   }
 
   .rodape {
-    margin: em 0 2em;
+    margin: 1em 0 2em;
   }
 
   .rodape img {
