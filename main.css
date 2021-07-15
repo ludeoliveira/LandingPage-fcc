@@ -97,7 +97,7 @@ ul {
   color: #fe019a;
   font-size: 2.5em;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 
@@ -162,7 +162,6 @@ ul {
 
 .video-description {
   grid-column: 1 / span 2;
-  margin: 2em;
   padding: 0 5em;
 }
 
@@ -220,7 +219,7 @@ input {
   color: #264bff;
   font-family: inherit;
   font-weight: 400;
-  font-size: .7em;
+  font-size: .5em;
 }
 ::placeholder {
   color: #264bff;
@@ -279,7 +278,7 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em 3em;
+    padding: 0 2em 0 2em;
     margin: 2em;
     width: 80vw;
   }
@@ -287,13 +286,13 @@ input {
   .img-container {
     width: 70vw;
   }
-  .product-description {
-    padding: 0;
-  }
 
   .product-description p,
   .video-description p{
     font-size: 1.5em;
+  }
+  .product-description h1 {
+    font-size: 3em;
   }
 
   .features {
@@ -306,11 +305,14 @@ input {
   }
 
   .video-description {
-    /* padding:0; */
+    padding: 0 3em 0 3em;
   }
 
+  .video-description h1 {
+    font-size: 4em;
+  }
   .video {
-    padding-top: -5em;
+    padding-top: -10em;
   }
 
   .divider {
@@ -321,7 +323,7 @@ input {
   .contact {
     border-bottom: solid 1px #264bff;
     border-right: none;
-    margin: 0 2em;
+    font-size: 2em;
   }
 
   .form {
